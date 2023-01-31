@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.con{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 75%;
+    margin: 54px auto;
+    flex-wrap: wrap;
+}
+.con .sign_up{
+    margin: 107px 0;
+    width: 40%
+}
+.con .img svg{
+    margin-top: 3.4rem;
+    width: auto;
+    box-shadow:    7px 0px 20px 1px #FF743D  ;
+}
+.con .header{
+    margin-bottom: 1rem;
+}
+.con .header h1{
+    text-transform: capitalize;
+    font-size: 39px;
+    font-weight: bold;
+}
+.con .header h1::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #FF743D;
+    border-radius: 50%;
+    position: relative;
+    left: 150px;
+}
+
+.con form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.con .header  div {
+    width: 80%;
+    display: flex;
+    margin-top:1rem; 
+    justify-content: space-between;
+}
+.con .header  div p{
+    display: inline;
+}
+.con .header  div span a{
+    display: inline-block;
+    cursor: pointer;
+    color: #FF743D;
+    text-decoration: none;
+}
+
+.con .sign_up form  input:not(#recieve){
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 43px;
+    border-radius: 5px;
+    outline: none;
+    border: #FF743D solid 1.4px;
+    padding: .5rem;
+}
+
+.con .sign_up form label{
+    margin-bottom: .3rem;
+    text-transform: capitalize;
+}
+.con .sign_up form select{
+    margin-bottom: 1rem;
+    border: none;
+    width: 20%;
+}
+.con .sign_up form select:focus{
+    outline: none;
+}
+
+.con .sign_up form div{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.con .sign_up form div input{
+    width: 30px;
+    height: 20px;
+    color: #FF743D;
+    outline:#FF743D ;
+    border: #FF743D solid 2px;
+    cursor: pointer;
+    background-color: #eee;
+}
+.con .sign_up form div input[type="checkbox"]{
+    accent-color: #FF743D;
+}
+
+.con .sign_up form div label{
+    font-size: .9rem;
+    position: relative;
+    bottom: .27rem;
+}
+
+.con .sign_up form button{
+    height:43px ;
+    background-color: #FF743D;
+    border-radius:5px ;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #eee;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.con .sign_up p{
+    margin-top: 2.6rem;
+    font-size: 1rem;
+    opacity: 70%;
+}
+
+.con .sign_up p span{
+    text-decoration: underline;
+}
+
+@media  (max-width:1170px){
+    .con .sign_up{
+        width: 80%;
+        
+    }
+
+    .con{
+        width: 100%;
+    }
+
+    form{
+        width: 100%;
+    }
+.con .img{
+    width: auto;
+}
+    .img svg{
+        display: none;
+    }
+}
